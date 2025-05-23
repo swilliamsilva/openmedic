@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Dados Médicos - Software Open Source em Medicina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 56px;
+        }
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .hero-section h1 {
+            font-weight: 700;
+            color: #0d6efd;
+        }
+        .section-title {
+            color: #0d6efd;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .sidebar {
+            position: sticky;
+            top: 86px;
+        }
+        .sidebar .nav-link {
+            color: #495057;
+            padding: 0.5rem 1rem;
+        }
+        .sidebar .nav-link.active {
+            color: #0d6efd;
+            font-weight: 600;
+            background-color: #f8f9fa;
+            border-radius: 0.25rem;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .feature-list li {
+            margin-bottom: 0.75rem;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Software Open Source em Medicina</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analise.html">Análise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#conclusao">Conclusão</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-5 mb-4">Análise de Dados Médicos</h1>
+                    <p class="lead">Ferramentas open source para análise estatística, epidemiológica e visualização de dados em saúde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="list-group">
+                        <a href="#epiinfo" class="list-group-item list-group-item-action active">Epi Info</a>
+                        <a href="#caracteristicas" class="list-group-item list-group-item-action">Características</a>
+                        <a href="#aplicacoes" class="list-group-item list-group-item-action">Aplicações</a>
+                        <a href="#beneficios" class="list-group-item list-group-item-action">Benefícios</a>
+                        <a href="#limitacoes" class="list-group-item list-group-item-action">Limitações</a>
+                        <a href="#alternativas" class="list-group-item list-group-item-action">Alternativas</a>
+                    </div>
+                    <div class="mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Links Úteis</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://www.cdc.gov/epiinfo/" target="_blank">Site Oficial Epi Info</a></li>
+                                    <li><a href="https://www.cdc.gov/epiinfo/support/downloads.html" target="_blank">Download</a></li>
+                                    <li><a href="https://www.cdc.gov/epiinfo/support/userguide.html" target="_blank">Guia do Usuário</a></li>
+                                    <li><a href="https://www.cdc.gov/epiinfo/support/tutorials.html" target="_blank">Tutoriais</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <div id="epiinfo" class="mb-5">
+                    <h2 class="section-title">Epi Info: Ferramenta Robusta para Epidemiologia e Saúde Pública</h2>
+                    <p>O Epi Info é um pacote de software de domínio público desenvolvido pelo Centers for Disease Control and Prevention (CDC) dos Estados Unidos, projetado especificamente para a comunidade de médicos e pesquisadores da saúde pública. Esta ferramenta tem sido fundamental em inúmeras investigações epidemiológicas e estudos de saúde pública ao redor do mundo.</p>
+                    
+                    <div class="text-center">
+                        <img src="https://www.cdc.gov/epiinfo/images/epi-info-7-dashboard.jpg" alt="Dashboard do Epi Info" class="screenshot">
+                        <p class="text-muted">Interface principal do Epi Info mostrando o painel de ferramentas</p>
+                    </div>
+                    
+                    <p>Desde sua criação em 1985, o Epi Info evoluiu para se tornar uma das ferramentas mais utilizadas em epidemiologia de campo, vigilância de saúde pública e pesquisa. Sua combinação de facilidade de uso, recursos estatísticos robustos e disponibilidade gratuita o torna particularmente valioso em contextos com recursos limitados.</p>
+                </div>
+
+                <div id="caracteristicas" class="mb-5">
+                    <h3 class="section-title">Características e Funcionalidades</h3>
+                    <p>O Epi Info oferece um conjunto abrangente de ferramentas para epidemiologia e análise de dados em saúde pública:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Coleta e Gestão de Dados</h4>
+                            <ul class="feature-list">
+                                <li>Elaboração de questionários personalizados</li>
+                                <li>Interface intuitiva para criação de formulários</li>
+                                <li>Entrada e coleta de dados estruturados</li>
+                                <li>Validação de dados durante a entrada</li>
+                                <li>Importação e exportação de dados em diversos formatos</li>
+                                <li>Suporte a coleta de dados em dispositivos móveis</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Análise Estatística</h4>
+                            <ul class="feature-list">
+                                <li>Estatísticas descritivas (média, mediana, moda)</li>
+                                <li>Tabelas de frequência e tabelas cruzadas</li>
+                                <li>Testes de hipóteses (t-test, chi-square, ANOVA)</li>
+                                <li>Análise de regressão linear e logística</li>
+                                <li>Análise de sobrevivência</li>
+                                <li>Cálculos epidemiológicos (razão de chances, risco relativo)</li>
+                                <li>Cálculos de tamanho amostral</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Visualização de Dados</h4>
+                            <ul class="feature-list">
+                                <li>Geração de gráficos e visualizações</li>
+                                <li>Histogramas, gráficos de barras e de dispersão</li>
+                                <li>Gráficos de séries temporais</li>
+                                <li>Criação de mapas epidemiológicos</li>
+                                <li>Visualização geográfica de dados de saúde</li>
+                                <li>Exportação de visualizações para relatórios</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Ferramentas Específicas para Epidemiologia</h4>
+                            <ul class="feature-list">
+                                <li>Análise de dados de vigilância em saúde</li>
+                                <li>Suporte a estudos de caso-controle</li>
+                                <li>Análise de coorte</li>
+                                <li>Ferramentas para investigação de surtos</li>
+                                <li>Análise de dados de pesquisas</li>
+                                <li>Detecção de clusters espaciais e temporais</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info mt-4">
+                        <h5><i class="bi bi-info-circle"></i> Versões Disponíveis</h5>
+                        <p>O Epi Info está disponível em diferentes formatos para atender a diversas necessidades:</p>
+                        <ul>
+                            <li><strong>Epi Info para Windows:</strong> Aplicativo desktop completo com todas as funcionalidades</li>
+                            <li><strong>Epi Info Web:</strong> Versão baseada em navegador para coleta e análise de dados online</li>
+                            <li><strong>Epi Info Mobile:</strong> Aplicativo para dispositivos móveis Android e iOS para coleta de dados em campo</li>
+                            <li><strong>Epi Info Cloud Data Analytics:</strong> Plataforma baseada em nuvem para análise colaborativa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="aplicacoes" class="mb-5">
+                    <h3 class="section-title">Aplicações em Saúde Pública</h3>
+                    <p>O Epi Info é amplamente utilizado em diversas aplicações de saúde pública:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Investigação de Surtos</h5>
+                                    <p>O Epi Info é uma ferramenta essencial para investigação rápida de surtos de doenças, permitindo:</p>
+                                    <ul>
+                                        <li>Coleta rápida de dados em campo</li>
+                                        <li>Análise em tempo real para identificar fontes de infecção</li>
+                                        <li>Criação de curvas epidêmicas</li>
+                                        <li>Identificação de fatores de risco</li>
+                                        <li>Implementação de medidas de controle baseadas em evidências</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vigilância Epidemiológica</h5>
+                                    <p>Para monitoramento contínuo de doenças e condições de saúde em populações:</p>
+                                    <ul>
+                                        <li>Coleta sistemática de dados de vigilância</li>
+                                        <li>Detecção precoce de tendências e padrões</li>
+                                        <li>Monitoramento de doenças de notificação compulsória</li>
+                                        <li>Análise de séries temporais para detectar mudanças</li>
+                                        <li>Geração de relatórios periódicos de vigilância</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pesquisas em Saúde Pública</h5>
+                                    <p>Para estudos epidemiológicos formais e pesquisas de campo:</p>
+                                    <ul>
+                                        <li>Desenho de questionários de pesquisa</li>
+                                        <li>Coleta de dados em comunidades</li>
+                                        <li>Análise estatística de resultados</li>
+                                        <li>Identificação de associações e fatores de risco</li>
+                                        <li>Publicação de resultados com visualizações</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avaliação de Programas</h5>
+                                    <p>Para avaliar a eficácia de intervenções e programas de saúde pública:</p>
+                                    <ul>
+                                        <li>Coleta de indicadores de desempenho</li>
+                                        <li>Análise de resultados antes e depois</li>
+                                        <li>Comparação entre grupos de intervenção e controle</li>
+                                        <li>Avaliação de impacto de programas</li>
+                                        <li>Identificação de áreas para melhoria</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Contextos de Uso</h4>
+                        <p>O Epi Info é utilizado em diversos contextos ao redor do mundo:</p>
+                        <ul>
+                            <li>Departamentos de saúde locais, estaduais e nacionais</li>
+                            <li>Organizações não-governamentais de saúde</li>
+                            <li>Instituições acadêmicas e de pesquisa</li>
+                            <li>Agências internacionais como OMS e UNICEF</li>
+                            <li>Equipes de resposta a emergências de saúde</li>
+                            <li>Programas de treinamento em epidemiologia de campo</li>
+                            <li>Hospitais e sistemas de saúde</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="beneficios" class="mb-5">
+                    <h3 class="section-title">Benefícios para Profissionais de Saúde Pública</h3>
+                    <p>O Epi Info oferece numerosos benefícios para profissionais de saúde pública:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Acessibilidade</h5>
+                                    <ul>
+                                        <li>Gratuito e acessível para profissionais em todo o mundo</li>
+                                        <li>Elimina barreiras financeiras ao uso de software de análise estatística</li>
+                                        <li>Disponível em múltiplas plataformas (desktop, web, móvel)</li>
+                                        <li>Não requer conhecimentos avançados de programação</li>
+                                        <li>Interface relativamente amigável para não-estatísticos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Suporte e Comunidade</h5>
+                                    <ul>
+                                        <li>Suporte multilíngue com versões em diversos idiomas</li>
+                                        <li>Ampla adoção em departamentos de saúde e instituições acadêmicas</li>
+                                        <li>Comunidade ativa de usuários compartilhando conhecimentos</li>
+                                        <li>Recursos educacionais disponíveis (tutoriais, guias)</li>
+                                        <li>Atualizações regulares pelo CDC</li>
+                                        <li>Fóruns de usuários para resolução de problemas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-success mt-4">
+                        <h5><i class="bi bi-check-circle"></i> Impacto em Contextos com Recursos Limitados</h5>
+                        <p>O Epi Info é particularmente valioso em contextos com recursos limitados, como países em desenvolvimento, onde:</p>
+                        <ul>
+                            <li>O acesso a software comercial de análise estatística pode ser restrito devido a custos</li>
+                            <li>A infraestrutura de TI pode ser limitada, exigindo soluções que funcionem offline</li>
+                            <li>A capacidade de treinamento em software complexo pode ser reduzida</li>
+                            <li>A necessidade de ferramentas para resposta rápida a surtos é crítica</li>
+                            <li>Os recursos para vigilância epidemiológica são escassos</li>
+                        </ul>
+                        <p>Nestas situações, o Epi Info preenche uma lacuna importante, fornecendo capacidades analíticas robustas sem barreiras financeiras ou técnicas significativas.</p>
+                    </div>
+                </div>
+
+                <div id="limitacoes" class="mb-5">
+                    <h3 class="section-title">Limitações e Considerações</h3>
+                    <p>Apesar de suas muitas vantagens, o Epi Info apresenta algumas limitações que devem ser consideradas:</p>
+                    
+                    <div class="alert alert-warning">
+                        <h5>Desafios Potenciais</h5>
+                        <ul>
+                            <li><strong>Funcionalidades Estatísticas:</strong> Suas funcionalidades estatísticas são menos avançadas que pacotes estatísticos especializados como R ou SAS, o que pode ser limitante para análises mais complexas ou sofisticadas.</li>
+                            <li><strong>Interface de Usuário:</strong> Embora funcional, a interface do usuário é menos moderna que algumas alternativas contemporâneas, o que pode afetar a experiência do usuário.</li>
+                            <li><strong>Compatibilidade de Plataforma:</strong> A versão desktop é primariamente focada em Windows, o que pode ser uma limitação em ambientes que utilizam predominantemente outros sistemas operacionais.</li>
+                            <li><strong>Capacidade de Processamento:</strong> Para conjuntos de dados muito grandes, o desempenho pode ser inferior a ferramentas especializadas em big data.</li>
+                            <li><strong>Visualizações Avançadas:</strong> As capacidades de visualização, embora adequadas para muitos propósitos, são menos sofisticadas que ferramentas dedicadas de visualização de dados.</li>
+                        </ul>
+                    </div>
+                    
+                    <p>Para análises estatísticas mais avançadas ou visualizações de dados mais sofisticadas, pode ser necessário exportar dados do Epi Info para outras ferramentas. No entanto, para a maioria das aplicações em epidemiologia de campo e saúde pública básica, o Epi Info oferece todas as funcionalidades necessárias em um pacote acessível e bem suportado.</p>
+                    
+                    <div class="card bg-light mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Recomendações para Uso Eficaz</h5>
+                            <p>Para maximizar os benefícios do Epi Info, considere as seguintes recomendações:</p>
+                            <ul>
+                                <li>Invista tempo no treinamento inicial para familiarização com a interface</li>
+                                <li>Utilize os tutoriais e recursos educacionais disponíveis no site do CDC</li>
+                                <li>Para análises mais complexas, considere a integração com outras ferramentas estatísticas</li>
+                                <li>Participe de comunidades de usuários para compartilhar conhecimentos e resolver problemas</li>
+                                <li>Mantenha o software atualizado para acessar as funcionalidades mais recentes</li>
+                                <li>Desenvolva protocolos padronizados para coleta e análise de dados em sua organização</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="alternativas" class="mb-5">
+                    <h3 class="section-title">Alternativas Open Source</h3>
+                    <p>Além do Epi Info, existem outras opções de software de análise de dados em saúde pública de código aberto que podem ser consideradas:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Software</th>
+                                    <th>Características Principais</th>
+                                    <th>Diferencial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="https://www.r-project.org/" target="_blank">R com pacotes epidemiológicos</a></td>
+                                    <td>Ambiente estatístico completo com pacotes específicos para epidemiologia (EpiR, surveillance, etc.)</td>
+                                    <td>Altamente flexível e poderoso, mas com curva de aprendizado mais íngreme</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.openepi.com/" target="_blank">OpenEpi</a></td>
+                                    <td>Calculadora epidemiológica baseada na web para estatísticas, tabelas e cálculos epidemiológicos</td>
+                                    <td>Funciona diretamente no navegador sem necessidade de instalação</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.stata.com/" target="_blank">PSPP</a></td>
+                                    <td>Alternativa open source ao SPSS para análise estatística</td>
+                                    <td>Interface familiar para usuários de SPSS, bom para análises estatísticas gerais</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.qgis.org/" target="_blank">QGIS</a></td>
+                                    <td>Sistema de Informação Geográfica (GIS) para análise espacial de dados de saúde</td>
+                                    <td>Excelente para mapeamento e análise espacial de dados epidemiológicos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p>Cada uma destas alternativas tem seus próprios pontos fortes e pode ser mais adequada dependendo das necessidades específicas de análise, familiaridade com diferentes interfaces, e requisitos de processamento de dados. Em muitos casos, uma combinação de ferramentas pode oferecer a solução mais completa para análise de dados em saúde pública.</p>
+                </div>
+
+                <div class="text-center mt-5 mb-5">
+                    <a href="telemedicina.html" class="btn btn-outline-primary me-2">Anterior: Telemedicina</a>
+                    <a href="educacao.html" class="btn btn-primary">Próxima Categoria: Educação Médica</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Software Open Source em Medicina</h5>
+                    <p>Um panorama abrangente dos principais softwares de código aberto disponíveis para diferentes áreas da medicina.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Categorias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="prontuario.html">Prontuário Eletrônico</a></li>
+                        <li><a href="imagem.html">Imagem Médica</a></li>
+                        <li><a href="gestao.html">Gestão Hospitalar</a></li>
+                        <li><a href="telemedicina.html">Telemedicina</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="educacao.html">Educação Médica</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Referências</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.open-emr.org/" target="_blank">OpenEMR</a></li>
+                        <li><a href="https://weasis.org/" target="_blank">Weasis</a></li>
+                        <li><a href="https://www.open-hospital.org/" target="_blank">Open Hospital</a></li>
+                        <li><a href="https://www.cdc.gov/epiinfo/" target="_blank">Epi Info</a></li>
+                        <li><a href="https://openlabyrinth.ca/" target="_blank">OpenLabyrinth</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>williamsilva.codigo@gmail.com</p>
+                <p>&copy; 2025 OpenMedic- Software para Medicina.Conteúdo disponível sob licença Creative Commons.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ativar scrollspy para navegação
+        document.addEventListener('DOMContentLoaded', function() {
+            // Destacar links ativos na barra lateral
+            const navLinks = document.querySelectorAll('.sidebar .list-group-item');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                document.querySelectorAll('div[id]').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

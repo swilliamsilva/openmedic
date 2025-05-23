@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Hospitalar - Software Open Source em Medicina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 56px;
+        }
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .hero-section h1 {
+            font-weight: 700;
+            color: #0d6efd;
+        }
+        .section-title {
+            color: #0d6efd;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .sidebar {
+            position: sticky;
+            top: 86px;
+        }
+        .sidebar .nav-link {
+            color: #495057;
+            padding: 0.5rem 1rem;
+        }
+        .sidebar .nav-link.active {
+            color: #0d6efd;
+            font-weight: 600;
+            background-color: #f8f9fa;
+            border-radius: 0.25rem;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .feature-list li {
+            margin-bottom: 0.75rem;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Software Open Source em Medicina</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analise.html">Análise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#conclusao">Conclusão</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-5 mb-4">Gestão Hospitalar</h1>
+                    <p class="lead">Sistemas open source para administração de hospitais, clínicas e centros de saúde, com foco em contextos com recursos limitados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="list-group">
+                        <a href="#openhospital" class="list-group-item list-group-item-action active">Open Hospital</a>
+                        <a href="#caracteristicas" class="list-group-item list-group-item-action">Características</a>
+                        <a href="#objetivos" class="list-group-item list-group-item-action">Objetivos e Filosofia</a>
+                        <a href="#historia" class="list-group-item list-group-item-action">História e Adoção</a>
+                        <a href="#beneficios" class="list-group-item list-group-item-action">Benefícios</a>
+                        <a href="#limitacoes" class="list-group-item list-group-item-action">Limitações</a>
+                        <a href="#alternativas" class="list-group-item list-group-item-action">Alternativas</a>
+                    </div>
+                    <div class="mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Links Úteis</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://www.open-hospital.org/" target="_blank">Site Oficial Open Hospital</a></li>
+                                    <li><a href="https://github.com/informatici/openhospital" target="_blank">GitHub do Open Hospital</a></li>
+                                    <li><a href="https://www.open-hospital.org/oh-doc/" target="_blank">Documentação</a></li>
+                                    <li><a href="https://www.open-hospital.org/download/" target="_blank">Download</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <div id="openhospital" class="mb-5">
+                    <h2 class="section-title">Open Hospital: Solução Sustentável para Contextos com Recursos Limitados</h2>
+                    <p>O Open Hospital é um software livre e de código aberto desenvolvido e mantido pela organização Informatici Senza Frontiere (Informáticos Sem Fronteiras), criado especificamente para fornecer uma ferramenta sustentável para a gestão de hospitais, centros e instalações de saúde, com forte foco em países em desenvolvimento.</p>
+                    
+                    <div class="text-center">
+                        <img src="https://www.open-hospital.org/wp-content/uploads/2020/05/oh-dashboard-1024x576.png" alt="Dashboard do Open Hospital" class="screenshot">
+                        <p class="text-muted">Dashboard principal do Open Hospital mostrando a interface de usuário</p>
+                    </div>
+                    
+                    <p>Este software representa uma abordagem pragmática à informatização de serviços de saúde em contextos desafiadores, priorizando funcionalidades essenciais, baixos requisitos de hardware e facilidade de uso. Licenciado sob GPL v3, o Open Hospital garante que permaneça livre e aberto para uso, modificação e distribuição.</p>
+                </div>
+
+                <div id="caracteristicas" class="mb-5">
+                    <h3 class="section-title">Características e Funcionalidades</h3>
+                    <p>O Open Hospital oferece um conjunto de funcionalidades essenciais para a gestão hospitalar, projetadas para dar suporte às atividades diárias da equipe hospitalar de forma eficiente e acessível:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Gerenciamento de Pacientes</h4>
+                            <ul class="feature-list">
+                                <li>Registro e identificação de pacientes</li>
+                                <li>Histórico médico e acompanhamento</li>
+                                <li>Gestão de dados demográficos</li>
+                                <li>Registro de alergias e condições crônicas</li>
+                                <li>Busca e filtragem de registros</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Consultas e Atendimentos</h4>
+                            <ul class="feature-list">
+                                <li>Registro e acompanhamento de consultas</li>
+                                <li>Agendamento de atendimentos</li>
+                                <li>Registro de diagnósticos</li>
+                                <li>Prescrição de tratamentos</li>
+                                <li>Acompanhamento de evolução clínica</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Gestão de Internações</h4>
+                            <ul class="feature-list">
+                                <li>Admissão e alta de pacientes</li>
+                                <li>Alocação de leitos e quartos</li>
+                                <li>Monitoramento de ocupação hospitalar</li>
+                                <li>Registro de procedimentos durante internação</li>
+                                <li>Controle de diárias e taxas</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Farmácia e Medicamentos</h4>
+                            <ul class="feature-list">
+                                <li>Controle de estoque de medicamentos</li>
+                                <li>Registro de dispensação</li>
+                                <li>Alertas de estoque baixo</li>
+                                <li>Rastreamento de lotes e validades</li>
+                                <li>Gestão de doações de medicamentos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Laboratório</h4>
+                            <ul class="feature-list">
+                                <li>Registro e acompanhamento de exames</li>
+                                <li>Entrada de resultados laboratoriais</li>
+                                <li>Histórico de exames por paciente</li>
+                                <li>Valores de referência para resultados</li>
+                                <li>Impressão de resultados</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Relatórios e Estatísticas</h4>
+                            <ul class="feature-list">
+                                <li>Relatórios operacionais</li>
+                                <li>Estatísticas de atendimento</li>
+                                <li>Indicadores de ocupação</li>
+                                <li>Relatórios de consumo de medicamentos</li>
+                                <li>Exportação de dados para análise</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="objetivos" class="mb-5">
+                    <h3 class="section-title">Objetivos e Filosofia</h3>
+                    <p>O Open Hospital foi desenvolvido com objetivos claros e uma filosofia centrada na sustentabilidade e acessibilidade:</p>
+                    
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Missão do Open Hospital</h5>
+                            <ul>
+                                <li><strong>Automatizar a gestão de centros de saúde com custos reduzidos</strong>, eliminando barreiras financeiras à informatização</li>
+                                <li><strong>Proporcionar autonomia completa aos usuários</strong>, reduzindo dependência de suporte técnico externo</li>
+                                <li><strong>Oferecer flexibilidade para fácil adoção</strong> em diferentes contextos e necessidades</li>
+                                <li><strong>Criar uma plataforma de software EMR/HIS com foco específico em países em desenvolvimento</strong>, atendendo às necessidades reais destes contextos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p>Esta filosofia reflete-se na abordagem simplificada do software, que prioriza funcionalidades essenciais e usabilidade em ambientes com infraestrutura limitada, em vez de recursos avançados que poderiam complicar a implementação e o uso diário.</p>
+                    
+                    <p>O desenvolvimento do Open Hospital é guiado por princípios de software livre, cooperação internacional e foco nas necessidades reais dos usuários finais, especialmente aqueles em contextos com recursos limitados.</p>
+                </div>
+
+                <div id="historia" class="mb-5">
+                    <h3 class="section-title">História e Adoção Global</h3>
+                    <p>A trajetória do Open Hospital demonstra seu impacto e relevância em contextos desafiadores:</p>
+                    
+                    <div class="timeline">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">2005: Primeiros Passos</h5>
+                                <p>Utilizado pela primeira vez no Hospital St. Luke em Uganda, o Open Hospital nasceu da necessidade real de um sistema de gestão hospitalar adaptado a contextos com recursos limitados.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">2006-2010: Desenvolvimento Inicial</h5>
+                                <p>Período de desenvolvimento intenso, com foco na criação de funcionalidades essenciais e na adaptação às necessidades específicas de hospitais em regiões com infraestrutura limitada.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">2010-2015: Expansão</h5>
+                                <p>O software começou a ser adotado em outros países africanos, incluindo Etiópia, Quênia e Tanzânia, demonstrando sua adaptabilidade a diferentes contextos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">2015-Presente: Crescimento Global</h5>
+                                <p>Expansão para outros continentes, incluindo instalações na Ásia e América Latina. Desenvolvimento contínuo baseado no feedback dos usuários e nas necessidades emergentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info">
+                        <h5><i class="bi bi-globe"></i> Adoção Internacional</h5>
+                        <p>O Open Hospital foi adotado em diversos países, incluindo:</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Uganda</li>
+                                    <li>Etiópia</li>
+                                    <li>Quênia</li>
+                                    <li>Tanzânia</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Camarões</li>
+                                    <li>Togo</li>
+                                    <li>Benin</li>
+                                    <li>Sudão</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Afeganistão</li>
+                                    <li>Nepal</li>
+                                    <li>Haiti</li>
+                                    <li>Peru</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Esta ampla adoção em diversos contextos demonstra a eficácia e adaptabilidade do Open Hospital a diferentes necessidades e ambientes. O desenvolvimento contínuo é baseado nas necessidades reais de hospitais em regiões com recursos limitados, garantindo que o software permaneça relevante e útil para seus usuários-alvo.</p>
+                </div>
+
+                <div id="beneficios" class="mb-5">
+                    <h3 class="section-title">Benefícios em Contextos com Recursos Limitados</h3>
+                    <p>O Open Hospital oferece benefícios significativos em contextos com recursos limitados:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Benefícios Econômicos</h5>
+                                    <ul>
+                                        <li>Completamente gratuito e de código aberto, eliminando custos de licenciamento</li>
+                                        <li>Redução de custos operacionais através da informatização</li>
+                                        <li>Menor necessidade de investimento em hardware avançado</li>
+                                        <li>Redução de despesas com treinamento devido à interface intuitiva</li>
+                                        <li>Economia em suporte técnico pela simplicidade do sistema</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Benefícios Operacionais</h5>
+                                    <ul>
+                                        <li>Facilidade de instalação e uso, reduzindo a necessidade de treinamento extensivo</li>
+                                        <li>Capacidade de funcionar em hardware modesto, diminuindo requisitos de infraestrutura</li>
+                                        <li>Personalização conforme necessidades locais</li>
+                                        <li>Projetado a partir das demandas dos beneficiários diretos</li>
+                                        <li>Melhoria na gestão de registros médicos eletrônicos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Impacto na Qualidade do Atendimento</h4>
+                        <p>Além dos benefícios econômicos e operacionais, o Open Hospital contribui para a melhoria da qualidade do atendimento de diversas formas:</p>
+                        <ul>
+                            <li>Redução de erros médicos através de registros eletrônicos organizados</li>
+                            <li>Melhoria no acompanhamento de pacientes crônicos</li>
+                            <li>Otimização da gestão de medicamentos, reduzindo desperdícios e garantindo disponibilidade</li>
+                            <li>Acesso mais rápido a informações clínicas relevantes</li>
+                            <li>Melhoria na continuidade do cuidado através de históricos médicos acessíveis</li>
+                            <li>Suporte à tomada de decisões baseadas em dados</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="limitacoes" class="mb-5">
+                    <h3 class="section-title">Limitações e Considerações</h3>
+                    <p>Embora o Open Hospital seja uma solução valiosa para muitos contextos, é importante reconhecer suas limitações:</p>
+                    
+                    <div class="alert alert-warning">
+                        <h5>Desafios Potenciais</h5>
+                        <ul>
+                            <li><strong>Conjunto de Funcionalidades:</strong> O conjunto de funcionalidades é mais limitado comparado a soluções mais abrangentes como o OpenEMR, focando nas necessidades essenciais de gestão hospitalar em vez de recursos avançados.</li>
+                            <li><strong>Integração:</strong> As opções de integração com sistemas externos são mais restritas, o que pode ser uma consideração importante para instituições que necessitam de interoperabilidade com outros sistemas de saúde.</li>
+                            <li><strong>Interface:</strong> A interface é mais básica e funcional, priorizando usabilidade e desempenho sobre estética, o que pode não atender às expectativas de usuários acostumados com sistemas mais modernos visualmente.</li>
+                            <li><strong>Suporte a Padrões:</strong> O suporte a padrões internacionais de interoperabilidade em saúde (como HL7, FHIR) pode ser limitado em comparação com sistemas mais complexos.</li>
+                        </ul>
+                    </div>
+                    
+                    <p>No entanto, estas limitações são frequentemente vantagens em contextos onde a simplicidade, robustez e baixos requisitos de recursos são mais importantes que funcionalidades avançadas ou interfaces sofisticadas. O Open Hospital foi deliberadamente projetado para ser simples e eficaz em ambientes desafiadores, onde soluções mais complexas poderiam falhar.</p>
+                </div>
+
+                <div id="alternativas" class="mb-5">
+                    <h3 class="section-title">Alternativas Open Source</h3>
+                    <p>Além do Open Hospital, existem outras opções de software de gestão hospitalar de código aberto que podem ser consideradas:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Software</th>
+                                    <th>Características Principais</th>
+                                    <th>Diferencial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="https://www.care2x.org/" target="_blank">Care2x</a></td>
+                                    <td>Sistema integrado de informação hospitalar e de saúde</td>
+                                    <td>Arquitetura modular com diversos componentes integráveis</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://hospitalrun.io/" target="_blank">HospitalRun</a></td>
+                                    <td>Sistema de gestão hospitalar projetado para ambientes com conectividade limitada</td>
+                                    <td>Funciona offline e sincroniza quando a conexão está disponível</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.gnu.org/software/health/" target="_blank">GNU Health</a></td>
+                                    <td>Sistema de informação hospitalar e de saúde pública</td>
+                                    <td>Forte integração com sistemas de saúde pública e vigilância epidemiológica</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.bahmni.org/" target="_blank">Bahmni</a></td>
+                                    <td>Sistema integrado de EMR, LIS, RIS, farmácia e gestão financeira</td>
+                                    <td>Desenvolvido especificamente para contextos de recursos limitados</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p>Cada uma destas alternativas tem seus próprios pontos fortes e pode ser mais adequada dependendo do contexto específico de implementação, necessidades clínicas e recursos disponíveis. A escolha entre elas deve considerar fatores como complexidade do ambiente hospitalar, recursos técnicos disponíveis, necessidades específicas de integração e requisitos regulatórios locais.</p>
+                </div>
+
+                <div class="text-center mt-5 mb-5">
+                    <a href="imagem.html" class="btn btn-outline-primary me-2">Anterior: Imagem Médica</a>
+                    <a href="telemedicina.html" class="btn btn-primary">Próxima Categoria: Telemedicina</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Software Open Source em Medicina</h5>
+                    <p>Um panorama abrangente dos principais softwares de código aberto disponíveis para diferentes áreas da medicina.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Categorias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="prontuario.html">Prontuário Eletrônico</a></li>
+                        <li><a href="imagem.html">Imagem Médica</a></li>
+                        <li><a href="gestao.html">Gestão Hospitalar</a></li>
+                        <li><a href="telemedicina.html">Telemedicina</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="educacao.html">Educação Médica</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Referências</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.open-emr.org/" target="_blank">OpenEMR</a></li>
+                        <li><a href="https://weasis.org/" target="_blank">Weasis</a></li>
+                        <li><a href="https://www.open-hospital.org/" target="_blank">Open Hospital</a></li>
+                        <li><a href="https://www.cdc.gov/epiinfo/" target="_blank">Epi Info</a></li>
+                        <li><a href="https://openlabyrinth.ca/" target="_blank">OpenLabyrinth</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>williamsilva.codigo@gmail.com</p>
+                <p>&copy; 2025 OpenMedic- Software para Medicina.Conteúdo disponível sob licença Creative Commons.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ativar scrollspy para navegação
+        document.addEventListener('DOMContentLoaded', function() {
+            // Destacar links ativos na barra lateral
+            const navLinks = document.querySelectorAll('.sidebar .list-group-item');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                document.querySelectorAll('div[id]').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

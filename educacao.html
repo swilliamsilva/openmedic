@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Médica - Software Open Source em Medicina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 56px;
+        }
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .hero-section h1 {
+            font-weight: 700;
+            color: #0d6efd;
+        }
+        .section-title {
+            color: #0d6efd;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .sidebar {
+            position: sticky;
+            top: 86px;
+        }
+        .sidebar .nav-link {
+            color: #495057;
+            padding: 0.5rem 1rem;
+        }
+        .sidebar .nav-link.active {
+            color: #0d6efd;
+            font-weight: 600;
+            background-color: #f8f9fa;
+            border-radius: 0.25rem;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .feature-list li {
+            margin-bottom: 0.75rem;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Software Open Source em Medicina</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analise.html">Análise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#conclusao">Conclusão</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-5 mb-4">Educação Médica</h1>
+                    <p class="lead">Plataformas open source para simulação, treinamento e educação continuada em medicina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="list-group">
+                        <a href="#openlabyrinth" class="list-group-item list-group-item-action active">OpenLabyrinth</a>
+                        <a href="#caracteristicas" class="list-group-item list-group-item-action">Características</a>
+                        <a href="#aplicacoes" class="list-group-item list-group-item-action">Aplicações Educacionais</a>
+                        <a href="#beneficios" class="list-group-item list-group-item-action">Benefícios</a>
+                        <a href="#limitacoes" class="list-group-item list-group-item-action">Limitações</a>
+                        <a href="#alternativas" class="list-group-item list-group-item-action">Alternativas</a>
+                    </div>
+                    <div class="mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Links Úteis</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://openlabyrinth.ca/" target="_blank">Site Oficial OpenLabyrinth</a></li>
+                                    <li><a href="https://github.com/olab/Open-Labyrinth" target="_blank">GitHub do OpenLabyrinth</a></li>
+                                    <li><a href="https://demo.openlabyrinth.ca/" target="_blank">Demonstração</a></li>
+                                    <li><a href="https://openlabyrinth.ca/documentation/" target="_blank">Documentação</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <div id="openlabyrinth" class="mb-5">
+                    <h2 class="section-title">OpenLabyrinth: Plataforma Flexível para Aprendizagem Baseada em Casos</h2>
+                    <p>O OpenLabyrinth é uma plataforma educacional de código aberto projetada para criar e executar simulações virtuais de pacientes e cenários de aprendizagem baseada em casos. Desenvolvido inicialmente pela Universidade de Calgary e agora mantido por uma comunidade internacional, o OpenLabyrinth oferece uma ferramenta poderosa para educação médica interativa.</p>
+                    
+                    <div class="text-center">
+                        <img src="https://openlabyrinth.ca/wp-content/uploads/2019/03/OLab4-Authoring-1024x576.png" alt="Interface do OpenLabyrinth" class="screenshot">
+                        <p class="text-muted">Interface de autoria do OpenLabyrinth mostrando a criação de um caso clínico</p>
+                    </div>
+                    
+                    <p>Esta plataforma permite que educadores médicos criem experiências de aprendizado interativas e ramificadas, onde os alunos podem tomar decisões clínicas e ver as consequências dessas escolhas em um ambiente seguro e controlado. O OpenLabyrinth é particularmente valioso para o desenvolvimento de raciocínio clínico, tomada de decisão e pensamento crítico em estudantes de medicina e profissionais de saúde.</p>
+                </div>
+
+                <div id="caracteristicas" class="mb-5">
+                    <h3 class="section-title">Características e Funcionalidades</h3>
+                    <p>O OpenLabyrinth oferece um conjunto abrangente de ferramentas para criação e execução de simulações educacionais:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Criação de Conteúdo</h4>
+                            <ul class="feature-list">
+                                <li>Editor visual de casos clínicos</li>
+                                <li>Criação de cenários ramificados com múltiplos caminhos</li>
+                                <li>Suporte a conteúdo multimídia (imagens, áudio, vídeo)</li>
+                                <li>Incorporação de questionários e avaliações</li>
+                                <li>Ferramentas de feedback contextual</li>
+                                <li>Suporte a regras condicionais e lógica complexa</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Interatividade</h4>
+                            <ul class="feature-list">
+                                <li>Tomada de decisão em pontos-chave do caso</li>
+                                <li>Feedback imediato sobre decisões</li>
+                                <li>Simulação de consequências de diferentes escolhas</li>
+                                <li>Integração de elementos de gamificação</li>
+                                <li>Contadores e temporizadores para cenários de urgência</li>
+                                <li>Possibilidade de retorno a pontos anteriores do caso</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Gestão Educacional</h4>
+                            <ul class="feature-list">
+                                <li>Rastreamento de progresso dos alunos</li>
+                                <li>Coleta de dados sobre decisões tomadas</li>
+                                <li>Análise de desempenho individual e em grupo</li>
+                                <li>Exportação de dados para análise externa</li>
+                                <li>Gerenciamento de usuários e grupos</li>
+                                <li>Controle de acesso a diferentes casos</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Aspectos Técnicos</h4>
+                            <ul class="feature-list">
+                                <li>Baseado na web, acessível de qualquer dispositivo</li>
+                                <li>Responsivo para uso em dispositivos móveis</li>
+                                <li>API para integração com outros sistemas</li>
+                                <li>Suporte a padrões educacionais (xAPI, LTI)</li>
+                                <li>Código aberto e personalizável</li>
+                                <li>Arquitetura modular e extensível</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info mt-4">
+                        <h5><i class="bi bi-info-circle"></i> Evolução da Plataforma</h5>
+                        <p>O OpenLabyrinth evoluiu significativamente ao longo do tempo:</p>
+                        <ul>
+                            <li><strong>OpenLabyrinth v3:</strong> A versão estável atual, amplamente utilizada em instituições de ensino</li>
+                            <li><strong>OLab4:</strong> A próxima geração da plataforma, com interface modernizada e recursos avançados</li>
+                            <li><strong>OLab4 Player:</strong> Um reprodutor leve para casos clínicos, otimizado para dispositivos móveis</li>
+                            <li><strong>OLab4 Designer:</strong> Uma ferramenta de autoria aprimorada para criação de casos complexos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="aplicacoes" class="mb-5">
+                    <h3 class="section-title">Aplicações Educacionais</h3>
+                    <p>O OpenLabyrinth é utilizado em diversos contextos educacionais na medicina:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Educação Médica de Graduação</h5>
+                                    <p>Para estudantes de medicina em formação:</p>
+                                    <ul>
+                                        <li>Simulação de encontros clínicos básicos</li>
+                                        <li>Desenvolvimento de habilidades de entrevista e anamnese</li>
+                                        <li>Prática de raciocínio clínico</li>
+                                        <li>Exposição a casos raros ou complexos</li>
+                                        <li>Preparação para exames clínicos estruturados</li>
+                                        <li>Integração de ciências básicas e clínicas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Educação Médica de Pós-Graduação</h5>
+                                    <p>Para residentes e médicos em especialização:</p>
+                                    <ul>
+                                        <li>Simulação de casos complexos específicos da especialidade</li>
+                                        <li>Treinamento em tomada de decisão em situações críticas</li>
+                                        <li>Prática de gestão de recursos em cenários de emergência</li>
+                                        <li>Desenvolvimento de habilidades de comunicação avançadas</li>
+                                        <li>Preparação para certificações e recertificações</li>
+                                        <li>Treinamento em procedimentos raros ou de alto risco</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Educação Continuada</h5>
+                                    <p>Para profissionais de saúde em atividade:</p>
+                                    <ul>
+                                        <li>Atualização em novas diretrizes e protocolos</li>
+                                        <li>Treinamento em procedimentos ou tecnologias recentes</li>
+                                        <li>Simulação de casos raros para manutenção de competências</li>
+                                        <li>Prática de trabalho em equipe multidisciplinar</li>
+                                        <li>Desenvolvimento de habilidades de liderança clínica</li>
+                                        <li>Cumprimento de requisitos de educação continuada</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pesquisa em Educação Médica</h5>
+                                    <p>Para pesquisadores e desenvolvedores educacionais:</p>
+                                    <ul>
+                                        <li>Avaliação de padrões de tomada de decisão clínica</li>
+                                        <li>Estudo de eficácia de diferentes abordagens educacionais</li>
+                                        <li>Desenvolvimento e validação de instrumentos de avaliação</li>
+                                        <li>Pesquisa sobre raciocínio clínico e vieses cognitivos</li>
+                                        <li>Análise de comportamento de aprendizagem em diferentes níveis</li>
+                                        <li>Desenvolvimento de novos modelos pedagógicos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Exemplos de Implementação</h4>
+                        <p>O OpenLabyrinth tem sido implementado em diversos contextos educacionais ao redor do mundo:</p>
+                        <ul>
+                            <li><strong>Faculdades de Medicina:</strong> Integração no currículo para complementar experiências clínicas reais</li>
+                            <li><strong>Programas de Residência:</strong> Treinamento em gestão de casos complexos específicos da especialidade</li>
+                            <li><strong>Hospitais de Ensino:</strong> Desenvolvimento de competências em equipes multidisciplinares</li>
+                            <li><strong>Organizações Profissionais:</strong> Oferta de módulos de educação continuada para membros</li>
+                            <li><strong>Agências Governamentais:</strong> Treinamento em resposta a emergências de saúde pública</li>
+                            <li><strong>ONGs de Saúde Global:</strong> Capacitação de profissionais em contextos de recursos limitados</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="beneficios" class="mb-5">
+                    <h3 class="section-title">Benefícios para Educação Médica</h3>
+                    <p>O OpenLabyrinth oferece numerosos benefícios para instituições de ensino e profissionais de saúde:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Benefícios Pedagógicos</h5>
+                                    <ul>
+                                        <li>Aprendizagem experiencial em ambiente seguro</li>
+                                        <li>Desenvolvimento de pensamento crítico e tomada de decisão</li>
+                                        <li>Exposição a casos variados além da experiência clínica disponível</li>
+                                        <li>Feedback imediato sobre decisões clínicas</li>
+                                        <li>Possibilidade de repetição e prática deliberada</li>
+                                        <li>Adaptação ao ritmo individual de aprendizagem</li>
+                                        <li>Integração de conhecimentos teóricos e aplicação prática</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Benefícios Institucionais</h5>
+                                    <ul>
+                                        <li>Custo-efetividade comparado a simulações físicas</li>
+                                        <li>Escalabilidade para grandes grupos de estudantes</li>
+                                        <li>Padronização de experiências educacionais</li>
+                                        <li>Coleta de dados para avaliação de competências</li>
+                                        <li>Flexibilidade para implementação em diferentes currículos</li>
+                                        <li>Redução da dependência de pacientes reais para treinamento</li>
+                                        <li>Possibilidade de compartilhamento de casos entre instituições</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-success mt-4">
+                        <h5><i class="bi bi-check-circle"></i> Impacto na Segurança do Paciente</h5>
+                        <p>Um benefício significativo do OpenLabyrinth é sua contribuição para a segurança do paciente:</p>
+                        <ul>
+                            <li>Permite que estudantes cometam erros em ambiente virtual sem consequências para pacientes reais</li>
+                            <li>Desenvolve consciência sobre potenciais erros e como evitá-los</li>
+                            <li>Treina reconhecimento e gestão de situações de alto risco</li>
+                            <li>Promove prática de comunicação eficaz em situações críticas</li>
+                            <li>Desenvolve habilidades de tomada de decisão sob pressão</li>
+                            <li>Permite simulação de eventos adversos raros mas críticos</li>
+                        </ul>
+                        <p>Estes aspectos contribuem para formar profissionais mais preparados e conscientes, potencialmente reduzindo erros médicos e melhorando a qualidade do atendimento.</p>
+                    </div>
+                </div>
+
+                <div id="limitacoes" class="mb-5">
+                    <h3 class="section-title">Limitações e Considerações</h3>
+                    <p>Apesar de seus muitos benefícios, o OpenLabyrinth apresenta algumas limitações que devem ser consideradas:</p>
+                    
+                    <div class="alert alert-warning">
+                        <h5>Desafios Potenciais</h5>
+                        <ul>
+                            <li><strong>Curva de Aprendizado para Autores:</strong> A criação de casos complexos e ramificados requer tempo e familiaridade com a plataforma, o que pode representar uma barreira inicial para educadores.</li>
+                            <li><strong>Limitações de Realismo:</strong> Como simulação baseada em texto e mídia, não pode replicar completamente aspectos físicos do exame clínico ou procedimentos práticos.</li>
+                            <li><strong>Requisitos Técnicos:</strong> A implementação institucional requer recursos técnicos para instalação e manutenção do servidor, embora existam opções hospedadas.</li>
+                            <li><strong>Desenvolvimento de Conteúdo:</strong> A criação de casos de alta qualidade exige investimento significativo de tempo e expertise clínica e educacional.</li>
+                            <li><strong>Limitações de Interatividade:</strong> Embora avançado para uma plataforma baseada na web, não oferece o mesmo nível de interatividade que simuladores físicos ou de realidade virtual.</li>
+                        </ul>
+                    </div>
+                    
+                    <p>É importante notar que o OpenLabyrinth é mais eficaz quando utilizado como parte de uma estratégia educacional abrangente, complementando outras modalidades de ensino como experiências clínicas reais, simulações físicas e discussões em grupo.</p>
+                    
+                    <div class="card bg-light mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Recomendações para Implementação Eficaz</h5>
+                            <p>Para maximizar os benefícios do OpenLabyrinth, considere as seguintes recomendações:</p>
+                            <ul>
+                                <li>Invista em treinamento para educadores na criação de casos</li>
+                                <li>Desenvolva uma biblioteca de casos compartilhada para distribuir o esforço de criação</li>
+                                <li>Integre os casos virtuais com discussões presenciais para aprofundar a aprendizagem</li>
+                                <li>Utilize dados de desempenho dos alunos para refinar continuamente os casos</li>
+                                <li>Combine com outras modalidades de simulação para uma experiência mais completa</li>
+                                <li>Estabeleça um processo de revisão por pares para garantir qualidade e precisão clínica</li>
+                                <li>Alinhe os casos com objetivos curriculares específicos e competências desejadas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="alternativas" class="mb-5">
+                    <h3 class="section-title">Alternativas Open Source</h3>
+                    <p>Além do OpenLabyrinth, existem outras opções de software de educação médica de código aberto que podem ser consideradas:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Software</th>
+                                    <th>Características Principais</th>
+                                    <th>Diferencial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="https://openlabyrinth.ca/" target="_blank">OpenTUSK</a></td>
+                                    <td>Sistema de gestão de currículo médico com recursos de aprendizagem baseada em casos</td>
+                                    <td>Foco em gestão curricular completa além de casos clínicos</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.openmeded.org/" target="_blank">OpenMedEd</a></td>
+                                    <td>Plataforma para compartilhamento de recursos educacionais em medicina</td>
+                                    <td>Ênfase em comunidade e compartilhamento de conteúdo</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.ilios.org/" target="_blank">Ilios</a></td>
+                                    <td>Sistema de gestão curricular para escolas de ciências da saúde</td>
+                                    <td>Recursos avançados de mapeamento curricular e competências</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.meducator3.net/" target="_blank">Meducator</a></td>
+                                    <td>Plataforma para criação e compartilhamento de recursos educacionais em medicina</td>
+                                    <td>Foco em metadados educacionais e reutilização de conteúdo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p>Cada uma destas alternativas tem seus próprios pontos fortes e pode ser mais adequada dependendo das necessidades específicas educacionais, recursos disponíveis e objetivos curriculares. Em muitos casos, uma combinação de ferramentas pode oferecer a solução mais completa para educação médica.</p>
+                    
+                    <div class="alert alert-info mt-4">
+                        <h5><i class="bi bi-lightbulb"></i> Tendências Futuras</h5>
+                        <p>O campo de software educacional em medicina está evoluindo rapidamente, com tendências emergentes incluindo:</p>
+                        <ul>
+                            <li>Integração de inteligência artificial para personalização da aprendizagem</li>
+                            <li>Incorporação de realidade virtual e aumentada em simulações</li>
+                            <li>Análise de aprendizagem (learning analytics) para identificar padrões e necessidades</li>
+                            <li>Gamificação mais sofisticada para aumentar engajamento</li>
+                            <li>Interoperabilidade entre diferentes plataformas educacionais</li>
+                            <li>Colaboração internacional no desenvolvimento de casos e recursos</li>
+                        </ul>
+                        <p>Estas tendências provavelmente influenciarão a evolução futura do OpenLabyrinth e outras plataformas similares.</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5 mb-5">
+                    <a href="analise-dados.html" class="btn btn-outline-primary me-2">Anterior: Análise de Dados</a>
+                    <a href="index.html" class="btn btn-primary">Voltar ao Início</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Software Open Source em Medicina</h5>
+                    <p>Um panorama abrangente dos principais softwares de código aberto disponíveis para diferentes áreas da medicina.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Categorias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="prontuario.html">Prontuário Eletrônico</a></li>
+                        <li><a href="imagem.html">Imagem Médica</a></li>
+                        <li><a href="gestao.html">Gestão Hospitalar</a></li>
+                        <li><a href="telemedicina.html">Telemedicina</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="educacao.html">Educação Médica</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Referências</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.open-emr.org/" target="_blank">OpenEMR</a></li>
+                        <li><a href="https://weasis.org/" target="_blank">Weasis</a></li>
+                        <li><a href="https://www.open-hospital.org/" target="_blank">Open Hospital</a></li>
+                        <li><a href="https://www.cdc.gov/epiinfo/" target="_blank">Epi Info</a></li>
+                        <li><a href="https://openlabyrinth.ca/" target="_blank">OpenLabyrinth</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>williamsilva.codigo@gmail.com</p>
+                <p>&copy; 2025 OpenMedic- Software para Medicina.Conteúdo disponível sob licença Creative Commons.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ativar scrollspy para navegação
+        document.addEventListener('DOMContentLoaded', function() {
+            // Destacar links ativos na barra lateral
+            const navLinks = document.querySelectorAll('.sidebar .list-group-item');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                document.querySelectorAll('div[id]').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

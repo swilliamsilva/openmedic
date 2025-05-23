@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Médica - Software Open Source em Medicina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 56px;
+        }
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .hero-section h1 {
+            font-weight: 700;
+            color: #0d6efd;
+        }
+        .section-title {
+            color: #0d6efd;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .sidebar {
+            position: sticky;
+            top: 86px;
+        }
+        .sidebar .nav-link {
+            color: #495057;
+            padding: 0.5rem 1rem;
+        }
+        .sidebar .nav-link.active {
+            color: #0d6efd;
+            font-weight: 600;
+            background-color: #f8f9fa;
+            border-radius: 0.25rem;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .feature-list li {
+            margin-bottom: 0.75rem;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Software Open Source em Medicina</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analise.html">Análise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#conclusao">Conclusão</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-5 mb-4">Imagem Médica</h1>
+                    <p class="lead">Visualizadores e processadores de imagens médicas em formato DICOM e outras modalidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="list-group">
+                        <a href="#weasis" class="list-group-item list-group-item-action active">Weasis</a>
+                        <a href="#caracteristicas" class="list-group-item list-group-item-action">Características</a>
+                        <a href="#aplicacoes" class="list-group-item list-group-item-action">Aplicações Clínicas</a>
+                        <a href="#beneficios" class="list-group-item list-group-item-action">Benefícios</a>
+                        <a href="#limitacoes" class="list-group-item list-group-item-action">Limitações</a>
+                        <a href="#alternativas" class="list-group-item list-group-item-action">Alternativas</a>
+                    </div>
+                    <div class="mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Links Úteis</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://weasis.org/en/index.html" target="_blank">Site Oficial Weasis</a></li>
+                                    <li><a href="https://github.com/nroduit/Weasis" target="_blank">GitHub do Weasis</a></li>
+                                    <li><a href="https://nroduit.github.io/en/getting-started/" target="_blank">Documentação</a></li>
+                                    <li><a href="https://nroduit.github.io/en/tutorials/" target="_blank">Tutoriais</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <div id="weasis" class="mb-5">
+                    <h2 class="section-title">Weasis: Visualizador DICOM Avançado e Flexível</h2>
+                    <p>O Weasis é um visualizador DICOM (Digital Imaging and Communications in Medicine) gratuito e de código aberto, projetado para uso tanto como aplicativo independente quanto baseado na web. Este software representa uma solução robusta para visualização e análise de imagens médicas em diversos contextos clínicos.</p>
+                    
+                    <div class="text-center">
+                        <img src="https://weasis.org/en/images/weasis-3d.png" alt="Interface do Weasis" class="screenshot">
+                        <p class="text-muted">Interface do Weasis mostrando visualização 3D de imagens médicas</p>
+                    </div>
+                    
+                    <p>O Weasis foi desenvolvido para atender às necessidades evolutivas dos sistemas de informação clínica em imagem médica, com foco em fornecer acesso baseado na web a imagens radiológicas e suporte a uma ampla gama de tipos DICOM. É uma solução multiplataforma que funciona em Windows, Linux e macOS, oferecendo alta qualidade de visualização e ferramentas avançadas de análise.</p>
+                </div>
+
+                <div id="caracteristicas" class="mb-5">
+                    <h3 class="section-title">Características e Funcionalidades</h3>
+                    <p>O Weasis se destaca por sua arquitetura altamente modular e seu desempenho na renderização de imagens médicas de alta qualidade. Suas principais funcionalidades incluem:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Suporte a Tipos de Dados</h4>
+                            <ul class="feature-list">
+                                <li>Implementação detalhada do padrão DICOM</li>
+                                <li>Suporte a arquivos multi-frame e enhanced</li>
+                                <li>Compatibilidade com MPEG-2, MPEG-4, MIME Encapsulation</li>
+                                <li>Suporte a DOC, SR, PR, KOS, SEG, AU, RT e ECG</li>
+                                <li>Suporte a imagens DICOM com dados float/double (Mapas Paramétricos)</li>
+                                <li>Importação via DICOM Query/Retrieve e DICOMWeb</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Exportação de Dados</h4>
+                            <ul class="feature-list">
+                                <li>Exportação local de arquivos DICOM (DICOMDIR, ZIP, ISO)</li>
+                                <li>Conversão para formatos como TIFF, JPEG, PNG</li>
+                                <li>Envio para servidores PACS remotos ou DICOMWeb</li>
+                                <li>Salvamento de medições e anotações em DICOM Presentation States</li>
+                                <li>Exportação para arquivo XML</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Visualização e Renderização</h4>
+                            <ul class="feature-list">
+                                <li>Suporte a várias telas com calibração diferente</li>
+                                <li>Compatibilidade com monitores HiDPI</li>
+                                <li>Modo de tela cheia</li>
+                                <li>Manipulação de imagem com botões do mouse (pan, zoom, janelamento)</li>
+                                <li>Suporte a DICOM Modality LUTs, VOI LUTs</li>
+                                <li>Aplicação de DICOM Presentation States (GSPS)</li>
+                                <li>Exibição de gráficos como sobreposições</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Recursos Avançados</h4>
+                            <ul class="feature-list">
+                                <li>Renderização de volume com predefinições 3D</li>
+                                <li>Layouts para comparação de séries ou estudos</li>
+                                <li>Sincronização avançada de séries</li>
+                                <li>Exibição de linhas cruzadas e cursor 3D</li>
+                                <li>Reconstrução multiplanar oblíqua (MPR)</li>
+                                <li>Renderização de volume 3D</li>
+                                <li>Projeção de intensidade máxima</li>
+                                <li>Lupa de aumento persistente</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Medição e Anotação</h4>
+                            <ul class="feature-list">
+                                <li>Medição de comprimento, área e ângulo</li>
+                                <li>Estatísticas de região de pixels</li>
+                                <li>Histograma de valores de modalidade</li>
+                                <li>Medição SUV para imagens PET</li>
+                                <li>Anotações e marcações personalizáveis</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Visualizadores Específicos</h4>
+                            <ul class="feature-list">
+                                <li>Visualizador de ECG DICOM</li>
+                                <li>Visualizador de relatórios estruturados DICOM (SR)</li>
+                                <li>Visualizador de áudio DICOM (AU)</li>
+                                <li>Módulo Dicomizer para converter imagens padrão em DICOM</li>
+                                <li>Ferramentas DICOM RT para radioterapia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="aplicacoes" class="mb-5">
+                    <h3 class="section-title">Aplicações Clínicas</h3>
+                    <p>O Weasis é amplamente utilizado em diversos contextos clínicos e de pesquisa:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ambientes Hospitalares</h5>
+                                    <ul>
+                                        <li>Departamentos de radiologia</li>
+                                        <li>Consultórios médicos</li>
+                                        <li>Centros de diagnóstico por imagem</li>
+                                        <li>Integração com sistemas PACS hospitalares</li>
+                                        <li>Visualização de imagens em leitos e salas cirúrgicas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pesquisa e Educação</h5>
+                                    <ul>
+                                        <li>Pesquisas multicêntricas com compartilhamento de imagens</li>
+                                        <li>Ensino de radiologia e anatomia</li>
+                                        <li>Treinamento de profissionais de saúde</li>
+                                        <li>Análise de casos clínicos em ambiente acadêmico</li>
+                                        <li>Desenvolvimento de algoritmos de processamento de imagens</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Modalidades Suportadas</h4>
+                        <p>O Weasis oferece suporte a diversas modalidades de imagem médica, incluindo:</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Radiografia Digital (CR/DX)</li>
+                                    <li>Tomografia Computadorizada (CT)</li>
+                                    <li>Ressonância Magnética (MR)</li>
+                                    <li>Ultrassonografia (US)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Medicina Nuclear (NM)</li>
+                                    <li>Tomografia por Emissão de Pósitrons (PET)</li>
+                                    <li>Radiografia Panorâmica (PX)</li>
+                                    <li>Angiografia (XA)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Mamografia (MG)</li>
+                                    <li>Radioterapia (RT)</li>
+                                    <li>Eletrocardiograma (ECG)</li>
+                                    <li>Endoscopia (ES)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="beneficios" class="mb-5">
+                    <h3 class="section-title">Benefícios e Vantagens</h3>
+                    <p>O Weasis oferece várias vantagens significativas como solução de código aberto para visualização de imagens médicas:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vantagens Técnicas</h5>
+                                    <ul>
+                                        <li>Alto desempenho e qualidade de renderização</li>
+                                        <li>Multiplataforma (Windows, Linux, macOS)</li>
+                                        <li>Interface responsiva adaptada a diferentes dispositivos</li>
+                                        <li>Suporte a formatos avançados de imagem médica</li>
+                                        <li>Arquitetura modular e extensível</li>
+                                        <li>Código aberto e transparente</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vantagens Operacionais</h5>
+                                    <ul>
+                                        <li>Eliminação de custos de licenciamento</li>
+                                        <li>Integração flexível com sistemas existentes</li>
+                                        <li>Personalização conforme necessidades específicas</li>
+                                        <li>Independência de fornecedores</li>
+                                        <li>Comunidade ativa de desenvolvedores</li>
+                                        <li>Atualizações regulares e correções de segurança</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info mt-4">
+                        <h5><i class="bi bi-info-circle"></i> Impacto Econômico</h5>
+                        <p>A adoção do Weasis pode representar economia significativa para instituições de saúde, eliminando custos de licenciamento de visualizadores DICOM comerciais, que podem variar de centenas a milhares de dólares por estação de trabalho. Para redes hospitalares com dezenas ou centenas de pontos de visualização, esta economia pode ser substancial.</p>
+                    </div>
+                </div>
+
+                <div id="limitacoes" class="mb-5">
+                    <h3 class="section-title">Limitações e Considerações</h3>
+                    <p>Apesar de suas muitas vantagens, o Weasis apresenta algumas limitações que devem ser consideradas:</p>
+                    
+                    <div class="alert alert-warning">
+                        <h5>Desafios Potenciais</h5>
+                        <ul>
+                            <li><strong>Curva de Aprendizado:</strong> A utilização de recursos avançados pode exigir uma curva de aprendizado significativa para usuários não familiarizados com sistemas de imagem médica.</li>
+                            <li><strong>Integração com PACS:</strong> A integração completa com alguns sistemas PACS pode requerer configuração adicional e conhecimentos técnicos.</li>
+                            <li><strong>Requisitos de Hardware:</strong> Os recursos mais avançados do Weasis, como renderização 3D e reconstrução multiplanar, podem exigir hardware mais potente para desempenho ideal.</li>
+                            <li><strong>Suporte Técnico:</strong> Embora exista uma comunidade ativa, o suporte técnico formal pode ser mais limitado comparado a soluções comerciais com contratos de suporte.</li>
+                        </ul>
+                    </div>
+                    
+                    <p>No entanto, o software é projetado para funcionar adequadamente em configurações de hardware padrão para a maioria das tarefas de visualização básicas, e a comunidade de usuários oferece recursos de suporte através de fóruns e documentação online.</p>
+                </div>
+
+                <div id="alternativas" class="mb-5">
+                    <h3 class="section-title">Alternativas Open Source</h3>
+                    <p>Além do Weasis, existem outras opções de visualizadores DICOM de código aberto que podem ser consideradas:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Software</th>
+                                    <th>Características Principais</th>
+                                    <th>Diferencial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="https://www.osirix-viewer.com/osirix/osirix-md/" target="_blank">Horos (baseado em OsiriX)</a></td>
+                                    <td>Visualizador DICOM avançado para macOS com recursos de processamento 3D</td>
+                                    <td>Interface intuitiva e ferramentas avançadas de pós-processamento</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.orthanc-server.com/" target="_blank">Orthanc</a></td>
+                                    <td>Servidor PACS leve e modular com visualizador web integrado</td>
+                                    <td>Foco em armazenamento e distribuição de imagens DICOM</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.dcm4che.org/" target="_blank">dcm4che</a></td>
+                                    <td>Coleção de aplicativos e bibliotecas para gerenciamento de imagens médicas</td>
+                                    <td>Conjunto abrangente de ferramentas para desenvolvimento DICOM</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.radiantviewer.com/" target="_blank">3D Slicer</a></td>
+                                    <td>Plataforma para análise e visualização de imagens médicas com foco em pesquisa</td>
+                                    <td>Extensas capacidades de segmentação e análise quantitativa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p>Cada uma destas alternativas tem seus próprios pontos fortes e pode ser mais adequada dependendo do contexto específico de uso, necessidades de visualização e recursos disponíveis.</p>
+                </div>
+
+                <div class="text-center mt-5 mb-5">
+                    <a href="prontuario.html" class="btn btn-outline-primary me-2">Anterior: Prontuário Eletrônico</a>
+                    <a href="gestao.html" class="btn btn-primary">Próxima Categoria: Gestão Hospitalar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Software Open Source em Medicina</h5>
+                    <p>Um panorama abrangente dos principais softwares de código aberto disponíveis para diferentes áreas da medicina.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Categorias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="prontuario.html">Prontuário Eletrônico</a></li>
+                        <li><a href="imagem.html">Imagem Médica</a></li>
+                        <li><a href="gestao.html">Gestão Hospitalar</a></li>
+                        <li><a href="telemedicina.html">Telemedicina</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="educacao.html">Educação Médica</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Referências</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.open-emr.org/" target="_blank">OpenEMR</a></li>
+                        <li><a href="https://weasis.org/" target="_blank">Weasis</a></li>
+                        <li><a href="https://www.open-hospital.org/" target="_blank">Open Hospital</a></li>
+                        <li><a href="https://www.cdc.gov/epiinfo/" target="_blank">Epi Info</a></li>
+                        <li><a href="https://openlabyrinth.ca/" target="_blank">OpenLabyrinth</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>williamsilva.codigo@gmail.com</p>
+                <p>&copy; 2025 OpenMedic- Software para Medicina.Conteúdo disponível sob licença Creative Commons.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ativar scrollspy para navegação
+        document.addEventListener('DOMContentLoaded', function() {
+            // Destacar links ativos na barra lateral
+            const navLinks = document.querySelectorAll('.sidebar .list-group-item');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                document.querySelectorAll('div[id]').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

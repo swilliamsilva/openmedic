@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário Eletrônico - Software Open Source em Medicina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 56px;
+        }
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .hero-section h1 {
+            font-weight: 700;
+            color: #0d6efd;
+        }
+        .section-title {
+            color: #0d6efd;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .sidebar {
+            position: sticky;
+            top: 86px;
+        }
+        .sidebar .nav-link {
+            color: #495057;
+            padding: 0.5rem 1rem;
+        }
+        .sidebar .nav-link.active {
+            color: #0d6efd;
+            font-weight: 600;
+            background-color: #f8f9fa;
+            border-radius: 0.25rem;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .feature-list li {
+            margin-bottom: 0.75rem;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Software Open Source em Medicina</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analise.html">Análise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#conclusao">Conclusão</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-5 mb-4">Prontuário Eletrônico</h1>
+                    <p class="lead">Sistemas open source para gerenciamento de registros médicos eletrônicos, dados de pacientes, agendamento e faturamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="list-group">
+                        <a href="#openemr" class="list-group-item list-group-item-action active">OpenEMR</a>
+                        <a href="#caracteristicas" class="list-group-item list-group-item-action">Características</a>
+                        <a href="#certificacao" class="list-group-item list-group-item-action">Certificação</a>
+                        <a href="#suporte" class="list-group-item list-group-item-action">Suporte Multilíngue</a>
+                        <a href="#aplicacoes" class="list-group-item list-group-item-action">Aplicações</a>
+                        <a href="#limitacoes" class="list-group-item list-group-item-action">Limitações</a>
+                        <a href="#alternativas" class="list-group-item list-group-item-action">Alternativas</a>
+                    </div>
+                    <div class="mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Links Úteis</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://www.open-emr.org/" target="_blank">Site Oficial OpenEMR</a></li>
+                                    <li><a href="https://www.open-emr.org/wiki/" target="_blank">Wiki do OpenEMR</a></li>
+                                    <li><a href="https://github.com/openemr/openemr" target="_blank">GitHub do OpenEMR</a></li>
+                                    <li><a href="https://demo.openemr.io/openemr/" target="_blank">Demo Online</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <div id="openemr" class="mb-5">
+                    <h2 class="section-title">OpenEMR: Uma Solução Completa e Certificada</h2>
+                    <p>O OpenEMR destaca-se como um dos softwares de prontuário eletrônico de código aberto mais populares e completos do mundo. Desenvolvido sob a Licença Pública GNU, este sistema oferece uma solução integrada para gestão de registros médicos e administração de práticas médicas.</p>
+                    
+                    <div class="text-center">
+                        <img src="https://www.open-emr.org/images/OpenEMR_Dashboard.png" alt="Dashboard do OpenEMR" class="screenshot">
+                        <p class="text-muted">Dashboard principal do OpenEMR mostrando a interface de usuário</p>
+                    </div>
+                    
+                    <p>O OpenEMR é uma solução de software de código aberto para gerenciamento de práticas médicas, registros eletrônicos de saúde, agendamento e faturamento. Ele é usado por milhares de instalações em todo o mundo, atendendo a mais de 45 milhões de pacientes. O sistema é certificado pelo ONC (Office of the National Coordinator for Health Information Technology) e está em conformidade com os padrões internacionais de interoperabilidade em saúde.</p>
+                </div>
+
+                <div id="caracteristicas" class="mb-5">
+                    <h3 class="section-title">Características e Funcionalidades</h3>
+                    <p>O OpenEMR apresenta um conjunto abrangente de funcionalidades que atendem às diversas necessidades de clínicas e consultórios médicos:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Gerenciamento de Dados de Pacientes</h4>
+                            <ul class="feature-list">
+                                <li>Rastreamento detalhado de informações demográficas</li>
+                                <li>Histórico médico completo</li>
+                                <li>Gerenciamento de documentos e formulários</li>
+                                <li>Verificação de endereço com API USPS</li>
+                                <li>Personalização de campos de dados</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Agendamento de Pacientes</h4>
+                            <ul class="feature-list">
+                                <li>Quadro de fluxo de pacientes</li>
+                                <li>Rastreamento e relatórios</li>
+                                <li>Suporte a múltiplas instalações</li>
+                                <li>Notificação de consultas via e-mail e SMS</li>
+                                <li>Calendário de consultas flexível</li>
+                                <li>Configuração de consultas recorrentes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Registros Médicos Eletrônicos</h4>
+                            <ul class="feature-list">
+                                <li>Interoperabilidade através de padrões CCDA e FHIR</li>
+                                <li>Gerenciamento de encontros médicos</li>
+                                <li>Rastreamento de problemas médicos</li>
+                                <li>Controle de medicamentos e imunizações</li>
+                                <li>Formulários e notas clínicas (SOAP)</li>
+                                <li>Visualizador de imagens médicas DICOM</li>
+                                <li>Suporte a reconhecimento de voz</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Gerenciamento de Prescrições</h4>
+                            <ul class="feature-list">
+                                <li>Pesquisa de medicamentos online</li>
+                                <li>Rastreamento de prescrições</li>
+                                <li>Múltiplas opções para envio (e-prescrição, impressão, fax, e-mail)</li>
+                                <li>Layout personalizável</li>
+                                <li>Suporte a números DEA, NPI e licença estadual</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Faturamento Médico</h4>
+                            <ul class="feature-list">
+                                <li>Sistema flexível de codificação (CPT, HCPCS, ICD9, ICD10, SNOMED)</li>
+                                <li>Suporte para padrões 5010</li>
+                                <li>Faturamento eletrônico para clearinghouses</li>
+                                <li>Consultas de elegibilidade de seguro</li>
+                                <li>Rastreamento de seguro e contas a receber</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Outras Funcionalidades</h4>
+                            <ul class="feature-list">
+                                <li>Regras de decisão clínica</li>
+                                <li>Portal do paciente moderno</li>
+                                <li>Sistema abrangente de relatórios</li>
+                                <li>Agendamento online</li>
+                                <li>Mensagens seguras</li>
+                                <li>Pagamentos online</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="certificacao" class="mb-5">
+                    <h3 class="section-title">Certificação e Conformidade</h3>
+                    <p>Um diferencial importante do OpenEMR é sua certificação ONC (Office of the National Coordinator for Health Information Technology), que atesta sua conformidade com padrões estabelecidos de interoperabilidade e segurança. A versão 7.0.0 do OpenEMR é certificada ONC, o que o torna adequado para uso em contextos onde a conformidade regulatória é necessária.</p>
+                    
+                    <div class="alert alert-info">
+                        <h5><i class="bi bi-info-circle"></i> Certificação ONC</h5>
+                        <p>A certificação ONC garante que o software atende aos requisitos técnicos, funcionais e de segurança estabelecidos pelo Departamento de Saúde e Serviços Humanos dos EUA. Isso inclui capacidades como:</p>
+                        <ul>
+                            <li>Interoperabilidade e troca de informações</li>
+                            <li>Segurança e privacidade de dados</li>
+                            <li>Funcionalidades clínicas essenciais</li>
+                            <li>Capacidade de relatórios de qualidade</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="suporte" class="mb-5">
+                    <h3 class="section-title">Suporte Multilíngue e Comunidade</h3>
+                    <p>O OpenEMR suporta o uso de múltiplos idiomas dentro da mesma clínica, com mais de 35 idiomas atualmente disponíveis, incluindo português (brasileiro e europeu). O sistema suporta totalmente a codificação UTF-8 e escrita da direita para a esquerda (RTL).</p>
+                    
+                    <p>A comunidade em torno do OpenEMR é vibrante e ativa, oferecendo:</p>
+                    <ul>
+                        <li>Vasta documentação online</li>
+                        <li>Fórum gratuito para suporte</li>
+                        <li>Chat online para resolução de problemas</li>
+                        <li>Diversas opções de suporte tanto gratuitas quanto profissionais</li>
+                        <li>Contribuições constantes para desenvolvimento e aprimoramento</li>
+                    </ul>
+                    
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Comunidade OpenEMR</h5>
+                            <p>A comunidade OpenEMR inclui desenvolvedores, médicos, administradores de TI e entusiastas de todo o mundo. Conferências anuais, sprints de desenvolvimento e grupos de trabalho específicos contribuem para a evolução contínua do software.</p>
+                            <a href="https://community.open-emr.org/" class="btn btn-primary" target="_blank">Visitar Comunidade</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="aplicacoes" class="mb-5">
+                    <h3 class="section-title">Aplicações e Benefícios</h3>
+                    <p>O OpenEMR é particularmente valioso para clínicas de pequeno e médio porte que buscam uma solução completa sem os altos custos de licenciamento associados a sistemas proprietários. Sua natureza de código aberto permite personalização para atender às necessidades específicas de diferentes especialidades médicas e contextos de atendimento.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Benefícios Econômicos</h5>
+                                    <ul>
+                                        <li>Eliminação de custos de licenciamento</li>
+                                        <li>Redução de despesas operacionais</li>
+                                        <li>Escalabilidade conforme necessidade</li>
+                                        <li>Independência de fornecedores</li>
+                                        <li>Opções flexíveis de suporte</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Benefícios Técnicos</h5>
+                                    <ul>
+                                        <li>Compatibilidade multiplataforma (Windows, Linux, Mac OS X)</li>
+                                        <li>Personalização completa do código-fonte</li>
+                                        <li>Interoperabilidade com outros sistemas</li>
+                                        <li>Segurança verificável (código aberto)</li>
+                                        <li>Atualizações regulares e suporte da comunidade</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Contextos de Implementação</h4>
+                        <p>A flexibilidade do OpenEMR permite sua implementação em diversos ambientes:</p>
+                        <ul>
+                            <li>Consultórios médicos individuais</li>
+                            <li>Clínicas de pequeno e médio porte</li>
+                            <li>Redes de clínicas</li>
+                            <li>Centros de saúde comunitários</li>
+                            <li>Hospitais de pequeno porte</li>
+                            <li>Organizações não-governamentais de saúde</li>
+                            <li>Projetos de saúde em países em desenvolvimento</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="limitacoes" class="mb-5">
+                    <h3 class="section-title">Limitações e Considerações</h3>
+                    <p>Apesar de suas muitas vantagens, o OpenEMR apresenta algumas limitações que devem ser consideradas:</p>
+                    
+                    <div class="alert alert-warning">
+                        <h5>Desafios Potenciais</h5>
+                        <ul>
+                            <li><strong>Requisitos Técnicos:</strong> A implementação completa e personalização avançada podem requerer conhecimentos técnicos significativos, o que pode ser um desafio para clínicas sem suporte de TI adequado.</li>
+                            <li><strong>Interface de Usuário:</strong> Embora funcional, a interface de usuário pode não ser tão polida quanto algumas soluções comerciais.</li>
+                            <li><strong>Recursos de TI:</strong> A implementação do OpenEMR pode exigir recursos significativos de TI, especialmente para configuração inicial, migração de dados e integração com outros sistemas.</li>
+                            <li><strong>Curva de Aprendizado:</strong> Usuários acostumados com outros sistemas podem enfrentar uma curva de aprendizado inicial.</li>
+                        </ul>
+                    </div>
+                    
+                    <p>No entanto, estes desafios são geralmente compensados pelos benefícios de longo prazo em termos de custo, flexibilidade e independência tecnológica. Muitas organizações optam por trabalhar com parceiros de implementação certificados para superar estas limitações iniciais.</p>
+                </div>
+
+                <div id="alternativas" class="mb-5">
+                    <h3 class="section-title">Alternativas Open Source</h3>
+                    <p>Além do OpenEMR, existem outras opções de software de prontuário eletrônico de código aberto que podem ser consideradas:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Software</th>
+                                    <th>Características Principais</th>
+                                    <th>Diferencial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="https://www.gnu.org/software/health/" target="_blank">GNU Health</a></td>
+                                    <td>Sistema de informação hospitalar e de saúde, com foco em saúde pública e epidemiologia</td>
+                                    <td>Forte integração com sistemas de saúde pública e vigilância epidemiológica</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://hospitalrun.io/" target="_blank">HospitalRun</a></td>
+                                    <td>Sistema de gestão hospitalar projetado para ambientes com conectividade limitada</td>
+                                    <td>Funciona offline e sincroniza quando a conexão está disponível</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.bahmni.org/" target="_blank">Bahmni</a></td>
+                                    <td>Sistema integrado de EMR, LIS, RIS, farmácia e gestão financeira</td>
+                                    <td>Desenvolvido especificamente para contextos de recursos limitados</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://openmrs.org/" target="_blank">OpenMRS</a></td>
+                                    <td>Plataforma de registros médicos com foco em doenças como HIV/AIDS, tuberculose e malária</td>
+                                    <td>Arquitetura modular baseada em conceitos médicos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p>Cada uma destas alternativas tem seus próprios pontos fortes e pode ser mais adequada dependendo do contexto específico de implementação, necessidades clínicas e recursos disponíveis.</p>
+                </div>
+
+                <div class="text-center mt-5 mb-5">
+                    <a href="index.html" class="btn btn-outline-primary me-2">Voltar para Início</a>
+                    <a href="imagem.html" class="btn btn-primary">Próxima Categoria: Imagem Médica</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Software Open Source em Medicina</h5>
+                    <p>Um panorama abrangente dos principais softwares de código aberto disponíveis para diferentes áreas da medicina.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Categorias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="prontuario.html">Prontuário Eletrônico</a></li>
+                        <li><a href="imagem.html">Imagem Médica</a></li>
+                        <li><a href="gestao.html">Gestão Hospitalar</a></li>
+                        <li><a href="telemedicina.html">Telemedicina</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="educacao.html">Educação Médica</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Referências</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.open-emr.org/" target="_blank">OpenEMR</a></li>
+                        <li><a href="https://weasis.org/" target="_blank">Weasis</a></li>
+                        <li><a href="https://www.open-hospital.org/" target="_blank">Open Hospital</a></li>
+                        <li><a href="https://www.cdc.gov/epiinfo/" target="_blank">Epi Info</a></li>
+                        <li><a href="https://openlabyrinth.ca/" target="_blank">OpenLabyrinth</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>williamsilva.codigo@gmail.com</p>
+                <p>&copy; 2025 OpenMedic- Software para Medicina.Conteúdo disponível sob licença Creative Commons.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ativar scrollspy para navegação
+        document.addEventListener('DOMContentLoaded', function() {
+            // Destacar links ativos na barra lateral
+            const navLinks = document.querySelectorAll('.sidebar .list-group-item');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                document.querySelectorAll('div[id]').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
